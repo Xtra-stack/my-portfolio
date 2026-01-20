@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ajay Dhar Dubey | Portfolio</title>
+
+  <!-- Google Font (CORRECT WAY) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+  <!-- Your Script -->
+  <script src="script.js" defer></script>
+</head>
+
+</head>
+<body>
+    <div id="ui-layer">
+        <section id="hero">
+            <div class="profile-wrap">
+                <img src="profile.jpeg" alt="Ajay Dhar Dubey" class="profile-img">
+            </div>
+            <div class="hero-content">
+                <div class="tagline">📡 Status: Node Active @ Bundelkhand University</div>
+                <h1>AJAY DHAR <span>DUBEY</span></h1>
+                <p>Full-Stack Web Developer & Final Year CSE Undergraduate. Passionate about high-performance digital environments, WebRTC, and decentralized architectures.</p>
+                <div style="font-size: 0.75rem; color: #00f2ff; opacity: 0.7; letter-spacing: 2px;">INTERACT WITH NODES TO ENTER</div>
+            </div>
+        </section>
+
+        <div id="content-modal">
+            <button id="close-btn">&times;</button>
+            <div id="modal-inner">
+                <h2 id="modal-title">System Node</h2>
+                <div class="body-text" id="modal-text"></div>
+            </div>
+        </div>
+
+        <nav id="nav-hud">
+            <div class="hud-dot active" data-index="-1">CORE</div>
+            <div class="hud-dot" data-index="0">BIO</div>
+            <div class="hud-dot" data-index="1">TECH</div>
+            <div class="hud-dot" data-index="2">WORK</div>
+            <div class="hud-dot" data-index="3">EDU</div>
+            <div class="hud-dot" data-index="4">SYNC</div>
+            <div class="hud-dot" data-index="5">FEED</div>
+        </nav>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
