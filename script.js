@@ -1,13 +1,14 @@
 
 const THREE = window.THREE;
 const gsap = window.gsap;
+const profileImageUrl = new URL('./profile.jpeg', import.meta.url).href;
 
 const SECTIONS = [
     {
         title: "About",
         content: `
         <div class="section-card intro-card">
-            <img src="profile.jpeg" class="modal-profile-img" alt="Ajay Dhar Dubey">
+            <img src="${profileImageUrl}" class="modal-profile-img" alt="Ajay Dhar Dubey">
             <div>
                 <p class="section-kicker">About me</p>
                 <p>I’m a final-year Computer Science student and full-stack developer focused on production-grade applications, secure backend systems, real-time communication platforms, and modern responsive interfaces.</p>
