@@ -78,13 +78,13 @@ Created with passion for 3D Web & Interactive Experiences.
 
 ## Deploying on Vercel
 
-This project is a static site, so it can be deployed on Vercel without a build step.
+This project now uses a small Vite build so Vercel gets a clean production bundle.
 
 ### Recommended settings
 
 - Framework preset: Other
-- Build command: leave empty
-- Output directory: leave empty
+- Build command: `npm run build`
+- Output directory: `dist`
 - Root directory: project root
 
 ### Deploy steps
@@ -92,9 +92,9 @@ This project is a static site, so it can be deployed on Vercel without a build s
 1. Push the latest changes to GitHub.
 2. Open Vercel and choose "New Project".
 3. Import the `my-portfolio` repository.
-4. Keep the default static settings and deploy.
+4. Keep the build settings above and deploy.
 
 ### Notes
 
 - The resume asset is served from the repository as a static file.
-- If you later convert the site to Vite or React, update the deployment settings accordingly.
+- Vercel should use the generated `dist` folder from the Vite build.

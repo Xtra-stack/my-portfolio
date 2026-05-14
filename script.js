@@ -1,4 +1,7 @@
 
+const THREE = window.THREE;
+const gsap = window.gsap;
+
 const SECTIONS = [
     {
         title: "About",
