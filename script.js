@@ -1,92 +1,127 @@
 
 const SECTIONS = [
     {
-        title: "Biography",
+        title: "About",
         content: `
-        <img src="profile.jpeg" class="modalprofile-img" alt="Ajay Dhar Dubey">
-        I am a 4th-year (Final Year) B.Tech CSE student at Bundelkhand University. My journey is defined by a deep curiosity for how code creates immersive experiences. I focus on building real-time, decentralized, and highly interactive applications that push the boundaries of modern browsers. Currently seeking opportunities to apply my full-stack skills in professional environments.`,
-        color: 0x505050, dist: 22, size: 0.9, speed: 0.012
-    },
-    {
-        title: "Technology Stack",
-        content: `
-        <div class="tech-grid">
-            <div class="tech-category">
-                <h3>Frontend</h3>
-                <div class="tech-tags">React, JavaScript, HTML5, CSS3, Tailwind, Bootstrap</div>
-            </div>
-            <div class="tech-category">
-                <h3>Backend</h3>
-                <div class="tech-tags">Node.js, Express</div>
-            </div>
-            <div class="tech-category">
-                <h3>Databases</h3>
-                <div class="tech-tags">MongoDB, MySQL, PostgreSQL</div>
-            </div>
-            <div class="tech-category">
-                <h3>Real-time</h3>
-                <div class="tech-tags">WebRTC, Socket.io</div>
-            </div>
-            <div class="tech-category">
-                <h3>Tools</h3>
-                <div class="tech-tags">Git, GitHub, npm, VS Code</div>
-            </div>
-            <div class="tech-category learning-node">
-                <h3>Currently Learning</h3>
-                <div class="tech-tags">Blockchain (Hyperledger), libp2p, TypeScript, Docker</div>
+        <div class="section-card intro-card">
+            <img src="profile.jpeg" class="modal-profile-img" alt="Ajay Dhar Dubey">
+            <div>
+                <p class="section-kicker">About me</p>
+                <p>I’m a final-year Computer Science student and full-stack developer focused on production-grade applications, secure backend systems, real-time communication platforms, and modern responsive interfaces.</p>
+                <p class="section-copy">I build with React, Node.js, MongoDB, Socket.io, Docker, and WebRTC, with an emphasis on clarity, maintainability, and recruiter-ready execution.</p>
             </div>
         </div>`,
-        color: 0x00f2ff, dist: 35, size: 1.4, speed: 0.008
+        color: 0x8b8f98, dist: 22, size: 1.05, speed: 0.012
     },
     {
-        title: "Project Nexus",
+        title: "Skills",
         content: `
-            <p><strong>P2P File Transfer:</strong> A WebRTC-based high-speed direct browser sharing application.</p>
-            <p><strong>Decentralized Storage:</strong> A blockchain-inspired system for immutable and secure data handling.</p>
-            <p><strong>3D Solar Environment:</strong> The immersive Three.js portfolio system you are currently navigating.</p>
-        `,
-        color: 0x4477ff, dist: 50, size: 1.6, speed: 0.006
+        <div class="skill-grid">
+            <div class="skill-card"><h3>Languages</h3><div class="tech-tags">JavaScript, C++, HTML5, CSS3</div></div>
+            <div class="skill-card"><h3>Frontend</h3><div class="tech-tags">React 18, Vite, Tailwind CSS, React Router, Axios, Recharts</div></div>
+            <div class="skill-card"><h3>Backend</h3><div class="tech-tags">Node.js, Express.js, Socket.io, REST APIs, MVC Architecture, Nodemailer</div></div>
+            <div class="skill-card"><h3>Database</h3><div class="tech-tags">MongoDB, MySQL</div></div>
+            <div class="skill-card"><h3>Auth & Security</h3><div class="tech-tags">JWT, bcrypt, RBAC, CORS, dotenv</div></div>
+            <div class="skill-card"><h3>DevOps & Tools</h3><div class="tech-tags">Docker, Nginx, GitHub Actions CI/CD, Vercel, Render, Git, Postman</div></div>
+        </div>`,
+        color: 0x00f2ff, dist: 35, size: 1.35, speed: 0.008
     },
     {
-        title: "Academic Path",
+        title: "Projects",
         content: `
-            <p><strong>B.Tech in Computer Science & Engineering</strong></p>
-            <p>Bundelkhand University | Uttar Pradesh, India</p>
-            <p>Class of 2026/27 (Final Year Undergrad). Focus on Algorithm design, Database optimization, and Scalable Architectures.</p>
-        `,
-        color: 0xff6644, dist: 68, size: 1.2, speed: 0.004
+            <div class="project-grid">
+                <article class="project-card">
+                    <p class="project-label">Project 01</p>
+                    <h3>VIE – Virtual Industry Experience Platform</h3>
+                    <p>Role-based SDLC simulation platform with JWT authentication, RBAC, task lifecycle management, Monaco code editor integration, and automated email workflows.</p>
+                    <div class="project-tech">React 18 • Node.js • Express • MongoDB • JWT • Docker</div>
+                    <div class="project-links"><a href="https://vie-platform.vercel.app" target="_blank" rel="noreferrer">Live Demo</a></div>
+                </article>
+                <article class="project-card">
+                    <p class="project-label">Project 02</p>
+                    <h3>P2P File Sharing Web App</h3>
+                    <p>Browser-to-browser file transfer application built with WebRTC data channels and no server-side storage for privacy and speed.</p>
+                    <div class="project-tech">WebRTC • Node.js • Express.js</div>
+                    <div class="project-links"><a href="https://p2p-file-transfer-n03n.onrender.com" target="_blank" rel="noreferrer">Live Demo</a></div>
+                </article>
+                <article class="project-card">
+                    <p class="project-label">Project 03</p>
+                    <h3>Real-Time Network Inspector</h3>
+                    <p>Full-stack network monitoring system with live packet capture, Socket.io streaming, suspicious traffic detection, REST APIs, and real-time analytics dashboard.</p>
+                    <div class="project-tech">C++ • Node.js • React • Socket.io • MongoDB</div>
+                    <div class="project-links"><a href="https://github.com/Xtra-stack/real-time-network-inspector" target="_blank" rel="noreferrer">GitHub</a></div>
+                </article>
+                <article class="project-card">
+                    <p class="project-label">Project 04</p>
+                    <h3>3D Solar System Portfolio</h3>
+                    <p>Interactive 3D solar system portfolio built using Three.js with orbital animations and smooth camera controls.</p>
+                    <div class="project-tech">Three.js • JavaScript</div>
+                    <div class="project-links"><a href="https://github.com/Xtra-stack/my-portfolio" target="_blank" rel="noreferrer">GitHub</a></div>
+                </article>
+            </div>`,
+        color: 0x4c6fff, dist: 50, size: 1.7, speed: 0.006
     },
     {
-        title: "Signal (Contact)",
+        title: "Experience",
         content: `
-            <p>Interested in collaborating on real-world impactful projects or discussing job opportunities?</p>
-            <p>📧 <strong>ajy2bey@gmail.com</strong></p>
-            <p>📞 <strong>+91 8188925792</strong></p>
-            <p>GitHub: <a href="https://github.com/Xtra-stack" target="_blank" style="color:#00f2ff; text-decoration: none;">github.com/Xtra-stack</a></p>
-        `,
-        color: 0xccaa88, dist: 85, size: 3.5, speed: 0.002
+            <div class="section-card timeline-card">
+                <h3>Web Development Intern — Cognifyz Technologies</h3>
+                <p class="section-kicker">Jul 2025 – Aug 2025</p>
+                <ul>
+                    <li>Built responsive UI components.</li>
+                    <li>Integrated REST APIs.</li>
+                    <li>Worked with Git/GitHub workflows.</li>
+                    <li>Improved frontend responsiveness and usability.</li>
+                </ul>
+            </div>`,
+        color: 0xff8b4a, dist: 68, size: 1.25, speed: 0.004
     },
     {
-        title: "Feedback Node",
+        title: "Open Source",
         content: `
-        <p>Your insights help me calibrate my professional orbit. Leave a message below.</p>
-        <form class="feedback-form" id="feedback-form">
-            <div class="form-group">
-                <label>Your Name</label>
-                <input type="text" placeholder="Enter your name" required>
-            </div>
-            <div class="form-group">
-                <label>Email Address</label>
-                <input type="email" placeholder="email@example.com" required>
-            </div>
-            <div class="form-group">
-                <label>Message</label>
-                <textarea rows="4" placeholder="Your thoughts..." required></textarea>
-            </div>
-            <button type="submit" class="submit-btn">Transmit Message</button>
-        </form>
-        `,
-        color: 0x9c88ff, dist: 105, size: 2.2, speed: 0.0015, hasRings: true
+            <div class="section-card">
+                <p class="section-kicker">Open source contributions</p>
+                <ul>
+                    <li>Contributed updatePreferences API with validation and testing.</li>
+                    <li>Worked on authentication, cart, wishlist, and middleware systems in CleanerX.</li>
+                </ul>
+            </div>`,
+        color: 0xc9a26b, dist: 85, size: 1.3, speed: 0.003
+    },
+    {
+        title: "Education",
+        content: `
+            <div class="section-card">
+                <p class="section-kicker">Academic background</p>
+                <h3>B.Tech – Computer Science & Engineering</h3>
+                <p>Bundelkhand University</p>
+                <p>CGPA: 6.95/10 | 2026</p>
+                <div class="divider-line"></div>
+                <h3>10th – UP Board</h3>
+                <p>77.83% | 2018</p>
+            </div>`,
+        color: 0x9b8cff, dist: 102, size: 1.45, speed: 0.0018, hasRings: true
+    },
+    {
+        title: "Contact",
+        content: `
+            <div class="section-card contact-card">
+                <p class="section-kicker">Let’s talk</p>
+                <p>Open to software engineering internships and full-stack developer roles.</p>
+                <p><strong>Email:</strong> <a href="mailto:ajy2bey@gmail.com">ajy2bey@gmail.com</a></p>
+                <p><strong>Phone:</strong> +91 8188925792</p>
+                <p><strong>GitHub:</strong> <a href="https://github.com/Xtra-stack" target="_blank" rel="noreferrer">github.com/Xtra-stack</a></p>
+                <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/ajay-dubey-7a8939260" target="_blank" rel="noreferrer">linkedin.com/in/ajay-dubey-7a8939260</a></p>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-row">
+                        <input type="text" placeholder="Your name" required>
+                        <input type="email" placeholder="Your email" required>
+                    </div>
+                    <textarea rows="4" placeholder="Your message" required></textarea>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>`,
+        color: 0x6dd6d0, dist: 118, size: 2.0, speed: 0.0014, hasRings: true
     }
 ];
 
@@ -99,6 +134,7 @@ const raycaster = new THREE.Raycaster();
 const mouse = new THREE.Vector2();
 let isZoomed = false;
 let activeIdx = -1;
+let homeCameraState = { fov: 60, position: { x: 0, y: 45, z: 120 } };
 
 // --- Helper Functions (Defined before init) ---
 
@@ -131,12 +167,25 @@ function createGlowTexture() {
     return new THREE.CanvasTexture(canvas);
 }
 
+function getHomeCameraState() {
+    if (window.innerWidth <= 480) {
+        return { fov: 68, position: { x: 0, y: 40, z: 104 } };
+    }
+
+    if (window.innerWidth <= 768) {
+        return { fov: 62, position: { x: 0, y: 42, z: 112 } };
+    }
+
+    return { fov: 60, position: { x: 0, y: 45, z: 120 } };
+}
+
 // --- Main Engine ---
 
 function init() {
     // Basic Scene Setup
     scene = new THREE.Scene();
-    camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 2000);
+    homeCameraState = getHomeCameraState();
+    camera = new THREE.PerspectiveCamera(homeCameraState.fov, window.innerWidth / window.innerHeight, 0.1, 2000);
     
     renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
     renderer.setSize(window.innerWidth, window.innerHeight);
@@ -221,7 +270,7 @@ function init() {
     asteroidBelt = new THREE.Points(astGeom, new THREE.PointsMaterial({ size: 0.15, color: 0x888888 }));
     scene.add(asteroidBelt);
 
-    camera.position.set(0, 45, 120);
+    camera.position.set(homeCameraState.position.x, homeCameraState.position.y, homeCameraState.position.z);
     camera.lookAt(0,0,0);
 
     window.addEventListener('resize', onResize);
@@ -278,17 +327,17 @@ function viewNode(idx) {
         document.getElementById('modal-title').innerText = data.title;
         document.getElementById('modal-text').innerHTML = data.content;
 
-        // Feedback listener
-        if(data.title === "Feedback Node") {
+        // Contact listener
+        if(data.title === "Contact") {
             setTimeout(() => {
-                const form = document.getElementById('feedback-form');
+                const form = document.getElementById('contact-form');
                 if(form) {
                     form.onsubmit = (e) => {
                         e.preventDefault();
                         document.getElementById('modal-inner').innerHTML = `
-                            <h2 style="color:#00f2ff">Transmission Successful</h2>
-                            <p class="body-text">Thank you, Ajay. Signal received.</p>
-                            <button onclick="window.location.reload()" class="submit-btn" style="width:100%">Return to Station</button>
+                            <h2 style="color:#00f2ff">Message Received</h2>
+                            <p class="body-text">Thanks for reaching out. I’ll respond as soon as possible.</p>
+                            <button onclick="window.location.reload()" class="submit-btn" style="width:100%">Return to Portfolio</button>
                         `;
                     };
                 }
@@ -331,11 +380,30 @@ function resetView() {
         }
     });
 
-    gsap.to(camera, { fov: 60, duration: 1.5, ease: "power3.inOut", onUpdate: () => camera.updateProjectionMatrix() });
-    gsap.to(camera.position, { x: 0, y: 45, z: 120, duration: 1.6, ease: "power3.inOut" });
+    homeCameraState = getHomeCameraState();
+    gsap.to(camera, { fov: homeCameraState.fov, duration: 1.5, ease: "power3.inOut", onUpdate: () => camera.updateProjectionMatrix() });
+    gsap.to(camera.position, {
+        x: homeCameraState.position.x,
+        y: homeCameraState.position.y,
+        z: homeCameraState.position.z,
+        duration: 1.6,
+        ease: "power3.inOut"
+    });
 }
 
 function setupUI() {
+    const topLinks = document.querySelectorAll('.top-link');
+    topLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            const idx = parseInt(e.currentTarget.dataset.index);
+            if (idx === -1) {
+                resetView();
+            } else {
+                viewNode(idx);
+            }
+        });
+    });
+
     const dots = document.querySelectorAll('.hud-dot');
     dots.forEach(dot => {
         dot.addEventListener('click', (e) => {
@@ -343,6 +411,12 @@ function setupUI() {
             if (idx === -1) resetView(); else viewNode(idx);
         });
     });
+
+    const heroContactBtn = document.getElementById('hero-contact-btn');
+    if (heroContactBtn) {
+        heroContactBtn.addEventListener('click', () => viewNode(6));
+    }
+
     const closeBtn = document.getElementById('close-btn');
     if(closeBtn) closeBtn.addEventListener('click', resetView);
 }
@@ -350,12 +424,22 @@ function setupUI() {
 function updateHUD(idx) {
     const dots = document.querySelectorAll('.hud-dot');
     dots.forEach(d => d.classList.toggle('active', parseInt(d.dataset.index) === idx));
+
+    const topLinks = document.querySelectorAll('.top-link');
+    topLinks.forEach(link => link.classList.toggle('active', parseInt(link.dataset.index) === idx));
 }
 
 function onResize() {
+    homeCameraState = getHomeCameraState();
     camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();
     renderer.setSize(window.innerWidth, window.innerHeight);
+
+    if (!isZoomed) {
+        camera.fov = homeCameraState.fov;
+        camera.position.set(homeCameraState.position.x, homeCameraState.position.y, homeCameraState.position.z);
+        camera.lookAt(0,0,0);
+    }
 }
 
 function animate() {
@@ -390,6 +474,17 @@ window.onload = () => {
     // Double check that THREE and GSAP are loaded
     if(typeof THREE !== 'undefined' && typeof gsap !== 'undefined') {
         init();
+        const loadingScreen = document.getElementById('loading-screen');
+        if (loadingScreen) {
+            gsap.to(loadingScreen, {
+                opacity: 0,
+                duration: 0.45,
+                delay: 0.35,
+                onComplete: () => {
+                    loadingScreen.classList.add('is-hidden');
+                }
+            });
+        }
     } else {
         console.error("Critical libraries (Three.js or GSAP) missing. Check index.html script tags.");
     }
